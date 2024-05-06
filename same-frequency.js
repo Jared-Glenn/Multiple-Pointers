@@ -19,12 +19,11 @@ function sameFrequency(num1, num2) {
 
     const counter1 = frequencyCount(num1);
     const counter2 = frequencyCount(num2);
-    console.log("Counter1", counter1);
-    console.log("Counter2", counter2);
 
-    for (num of string) {
-        //PICK UP HERE! Needs to check each letter individually, I think!
-    }
-        if (counter1 !== counter2) {
-            return false;
+    for (const [key, value] of Object.entries(counter1)) {
+        if (counter2[key] !== value) {
+        return false;
         }
+    }
+return true;
+}
